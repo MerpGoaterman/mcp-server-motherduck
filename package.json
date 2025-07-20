@@ -1,8 +1,6 @@
 {
   "name": "mcp-motherduck",
   "version": "1.0.0",
-  "description": "An MCP server implementation that interacts with DuckDB and MotherDuck databases, providing SQL analytics capabilities to AI Assistants and IDEs.",
-  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "start": "node api/index.js",
@@ -10,20 +8,10 @@
     "build": "echo \"No build step required\""
   },
   "dependencies": {
-    "mcp-server-motherduck": "file:src"
+    "@motherduck/sdk": "^0.3.2"
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/motherduckdb/mcp-server-motherduck.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/motherduckdb/mcp-server-motherduck/issues"
-  },
-  "homepage": "https://github.com/motherduckdb/mcp-server-motherduck#readme"
+  }
 }
+

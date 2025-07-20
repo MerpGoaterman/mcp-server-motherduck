@@ -1,9 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/index.js", "use": "@vercel/node" }
+    { 
+      "src": "api/index.py", 
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "api/index.js" }
-  ]
+    { "src": "/(.*)", "dest": "api/index.py" }
+  ],
+  "env": {
+    "PYTHONPATH": "./src"
+  }
 }

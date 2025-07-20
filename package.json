@@ -1,17 +1,13 @@
 {
-  "name": "mcp-motherduck",
-  "version": "1.0.0",
-  "type": "module",
+  "name": "mcp-motherduck-vercel",
+  "version": "0.6.3",
+  "description": "MotherDuck MCP Server deployed on Vercel",
   "scripts": {
-    "start": "node api/index.js",
     "dev": "vercel dev",
-    "build": "echo \"No build step required\""
-  },
-  "dependencies": {
-    "@motherduck/sdk": "^0.3.2"
+    "build": "echo \"Python build - no build step required\"",
+    "deploy": "vercel --prod"
   },
   "engines": {
     "node": ">=18"
   }
 }
-
